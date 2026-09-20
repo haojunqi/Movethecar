@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>挪车通知</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .plate {
+    display: inline-block;
+    background: #1677ff;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+  }
+  .tip {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  .phone-btn {
+    display: block;
+    background: #07c160;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+  }
+  .phone-btn:active {
+    transform: scale(0.97);
+  }
+  .phone-btn small {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    opacity: 0.85;
+    margin-top: 4px;
+  }
+  .footer {
+    color: #bbb;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🚗</div>
+    <h1>车主您好，需要挪车</h1>
+    <div class="plate">鲁S·R0778</div>
+    <p class="tip">请点击下方按钮联系车主<br>感谢您的配合 🙏</p>
+
+    <!-- 修改这里的手机号 -->
+    <a class="phone-btn" href="tel:13800138000">
+      198 6334 2072
+      <small>点击拨打</small>
+    </a>
+
+    <div class="footer">扫码挪车 · 请勿骚扰</div>
+  </div>
+</body>
+</html>
